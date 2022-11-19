@@ -6,10 +6,10 @@ const evenGame = () => {
   const rigthAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
-    numbers.push(Math.round(Math.random() * 100));
-  }
-  for (let i = 0; i < 3; i += 1) {
-    rigthAnswers.push(numbers[i] % 2 === 0 ? 'yes' : 'no');
+    const number = Math.round(Math.random() * 100);
+
+    numbers.push(number);
+    rigthAnswers.push(number % 2 === 0 ? 'yes' : 'no');
   }
 
   game(numbers, rigthAnswers, rules);
