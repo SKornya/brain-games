@@ -8,3 +8,6 @@ https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep
 
 Example for 'Brain-calc' game:
 https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6
+
+Example for 'Brain-gcd' game:
+https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx
