@@ -14,3 +14,6 @@ https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx
 
 Example for 'Brain-progression' game:
 https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r
+
+Example for 'Brain-prime' game:
+https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh
