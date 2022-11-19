@@ -3,31 +3,41 @@
 
 <a href="https://codeclimate.com/github/SKornya/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9795e25576592b6e5787/maintainability" /></a>
 
-### Install
-  '''bash
-  make install
-  '''
+## Install
 
-### Run games
-  '''bash
-  make brain-even
-  make brain-calc
-  make brain-gcd
-  make brain-progression
-  make brain-prime
-  '''
+```bash
+make install
+```
 
-Example for 'Brain-even' game: 
+## Run games
+
+```bash
+make brain-even
+make brain-calc
+make brain-gcd
+make brain-progression
+make brain-prime
+```
+
+## Asciinemas
+
+#### Brain-even game
+```bash 
 https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep
-
-Example for 'Brain-calc' game:
+```
+#### Brain-calc game
+```bash
 https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6
-
-Example for 'Brain-gcd' game:
+```
+#### Brain-gcd game
+```bash
 https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx
-
-Example for 'Brain-progression' game:
+```
+#### Brain-progression game
+```bash
 https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r
-
-Example for 'Brain-prime' game:
+```
+#### Brain-prime game
+```bash
 https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh
+```
