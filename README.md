@@ -22,22 +22,31 @@ make brain-prime
 ## Asciinemas
 
 #### Brain-even game
-```bash 
-https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep
-```
+
+<a href="твоя_ссылка" target="_blank">
+   <img src="https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep.svg" style="width: 50% "/>
+</a>
+
 #### Brain-calc game
-```bash
-https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6
-```
+
+<a href="твоя_ссылка" target="_blank">
+   <img src="https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6.svg" style="width: 50% "/>
+</a>
+
 #### Brain-gcd game
-```bash
-https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx
-```
+
+<a href="твоя_ссылка" target="_blank">
+   <img src="https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx.svg" style="width: 50% "/>
+</a>
+
 #### Brain-progression game
-```bash
-https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r
-```
+
+<a href="твоя_ссылка" target="_blank">
+   <img src="https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r.svg" style="width: 50% "/>
+</a>
+
 #### Brain-prime game
-```bash
-https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh
-```
+
+<a href="твоя_ссылка" target="_blank">
+   <img src="https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh.svg" style="width: 50% "/>
+</a>
