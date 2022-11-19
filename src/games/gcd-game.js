@@ -1,14 +1,16 @@
 import game from '../index.js';
 
 const getGCD = (num1, num2) => {
-  if (Math.max(num1, num2) % Math.min(num1, num2) === 0) {
+  const isMinNumGCD = Math.max(num1, num2) % Math.min(num1, num2) === 0;
+  if (isMinNumGCD) {
     return Math.min(num1, num2);
   }
 
   let result = 0;
 
   for (let div = 1; div < Math.min(num1, num2) / 2; div += 1) {
-    if (num1 % div === 0 && num2 % div === 0) {
+    const divIsCommonDivisor = num1 % div === 0 && num2 % div === 0;
+    if (divIsCommonDivisor) {
       result = div;
     }
   }
