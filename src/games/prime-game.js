@@ -13,7 +13,7 @@ const isPrimeNumber = (num) => {
   return true;
 };
 
-const PrimeGame = () => {
+const primeGame = () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const numbers = [];
   const rigthAnswers = [];
@@ -28,4 +28,4 @@ const PrimeGame = () => {
   game(numbers, rigthAnswers, rules);
 };
 
-export default PrimeGame;
+export default primeGame;
