@@ -3,17 +3,19 @@
 
 <a href="https://codeclimate.com/github/SKornya/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9795e25576592b6e5787/maintainability" /></a>
 
-Install
-=======
+### Install
+  '''bash
   make install
+  '''
 
-Run games
-=========
+### Run games
+  '''bash
   make brain-even
   make brain-calc
   make brain-gcd
   make brain-progression
   make brain-prime
+  '''
 
 Example for 'Brain-even' game: 
 https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep
