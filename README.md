@@ -5,3 +5,6 @@
 
 Example for 'Brain-even' game: 
 https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep
+
+Example for 'Brain-calc' game:
+https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6
