@@ -19,6 +19,7 @@ const game = (gameQuestions, rigthAnswers, rules) => {
       rigthAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rigthAnswers[i]}'.`);
+      console.log(`Let's try again, ${name}!`);
       break;
     }
   }
