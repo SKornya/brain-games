@@ -1,4 +1,6 @@
-import game from '../index.js';
+import game, { getRandomValueInRange } from '../index.js';
+
+const getRandomOperation = (operations) => operations[Math.floor(Math.random() * 3)];
 
 const calcGame = () => {
   const rules = 'What is the result of the expression?';
@@ -7,9 +9,9 @@ const calcGame = () => {
   const operations = ['+', '-', '*'];
 
   for (let i = 0; i < 3; i += 1) {
-    const firstOperand = Math.round(Math.random() * 100);
-    const secondOperand = Math.round(Math.random() * 100);
-    const operation = operations[Math.floor(Math.random() * 3)];
+    const firstOperand = getRandomOperation(0, 100);
+    const secondOperand = getRandomOperation(0, 100);
+    const operation = getRandomOperation(operations);
 
     expressions.push(`${firstOperand} ${operation} ${secondOperand}`);
 
@@ -24,6 +26,7 @@ const calcGame = () => {
         rigthAnswers.push(`${firstOperand * secondOperand}`);
         break;
       default:
+        console.log('Error! Unknown operation!');
         break;
     }
   }
