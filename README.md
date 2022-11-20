@@ -23,30 +23,30 @@ make brain-prime
 
 #### Brain-even game
 
-<a href="твоя_ссылка" target="_blank">
-   <img src="https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep.svg" style="width: 50% "/>
+<a href="https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep" target="_blank">
+   <img src="https://asciinema.org/a/FfUCKrdMcr967zGn7cKciwqep.svg" style="width: 30% "/>
 </a>
 
 #### Brain-calc game
 
-<a href="твоя_ссылка" target="_blank">
-   <img src="https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6.svg" style="width: 50% "/>
+<a href="https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6" target="_blank">
+   <img src="https://asciinema.org/a/RrMcbEvwc1M1hA3ATmFMVqAX6.svg" style="width: 30% "/>
 </a>
 
 #### Brain-gcd game
 
-<a href="твоя_ссылка" target="_blank">
-   <img src="https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx.svg" style="width: 50% "/>
+<a href="https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx" target="_blank">
+   <img src="https://asciinema.org/a/GOgxlbAJLQC3j9lZYHqZCrpDx.svg" style="width: 30% "/>
 </a>
 
 #### Brain-progression game
 
-<a href="твоя_ссылка" target="_blank">
-   <img src="https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r.svg" style="width: 50% "/>
+<a href="https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r" target="_blank">
+   <img src="https://asciinema.org/a/3PtWgOdsffQj2DNElIBuBKq4r.svg" style="width: 30% "/>
 </a>
 
 #### Brain-prime game
 
-<a href="твоя_ссылка" target="_blank">
-   <img src="https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh.svg" style="width: 50% "/>
+<a href="https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh" target="_blank">
+   <img src="https://asciinema.org/a/F2oswCDvyHF6FsNQ716Vupbjh.svg" style="width: 30% "/>
 </a>
