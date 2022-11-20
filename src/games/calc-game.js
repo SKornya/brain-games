@@ -9,8 +9,8 @@ const calcGame = () => {
   const operations = ['+', '-', '*'];
 
   for (let i = 0; i < 3; i += 1) {
-    const firstOperand = getRandomOperation(0, 100);
-    const secondOperand = getRandomOperation(0, 100);
+    const firstOperand = getRandomValueInRange(0, 100);
+    const secondOperand = getRandomValueInRange(0, 100);
     const operation = getRandomOperation(operations);
 
     expressions.push(`${firstOperand} ${operation} ${secondOperand}`);
