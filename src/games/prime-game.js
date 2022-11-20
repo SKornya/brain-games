@@ -1,4 +1,4 @@
-import game from '../index.js';
+import game, { getRandomValueInRange } from '../index.js';
 
 const isPrimeNumber = (num) => {
   if (num === 0 || num === 1) {
@@ -19,7 +19,7 @@ const primeGame = () => {
   const rigthAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
-    const number = Math.round(Math.random() * 100);
+    const number = getRandomValueInRange(0, 100);
 
     numbers.push(number);
     rigthAnswers.push(isPrimeNumber(number) ? 'yes' : 'no');

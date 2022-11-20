@@ -1,4 +1,6 @@
-import game from '../index.js';
+import game, { getRandomValueInRange } from '../index.js';
+
+const getMissedNumberIndex = (length) => Math.floor(Math.random() * length);
 
 const progressionGame = () => {
   const rules = 'What number is missing in the progression?';
@@ -6,9 +8,9 @@ const progressionGame = () => {
   const rigthAnswers = [];
 
   for (let i = 0; i < 3; i += 1) {
-    const progressionLength = Math.round(Math.random() * 5 + 5);
-    const progressionStart = Math.round(Math.random() * 100 - 50);
-    const progressionStep = Math.round(Math.random() * 10 - 5);
+    const progressionLength = getRandomValueInRange(5, 10);
+    const progressionStart = getRandomValueInRange(-50, 50);
+    const progressionStep = getRandomValueInRange(-5, 5);
 
     const progression = [progressionStart];
 
@@ -16,7 +18,7 @@ const progressionGame = () => {
       progression.push(progression[j - 1] + progressionStep);
     }
 
-    const missedNumberIndex = Math.floor(Math.random() * progressionLength);
+    const missedNumberIndex = getMissedNumberIndex(progressionLength);
 
     rigthAnswers.push(progression[missedNumberIndex].toString());
     progression[missedNumberIndex] = '..';
