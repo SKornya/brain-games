@@ -26,8 +26,7 @@ const calcGame = () => {
         rigthAnswers.push(`${firstOperand * secondOperand}`);
         break;
       default:
-        console.log('Error! Unknown operation!');
-        break;
+        throw new Error('Unknown operand!');
     }
   }
 
