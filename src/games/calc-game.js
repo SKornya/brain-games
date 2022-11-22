@@ -1,36 +1,34 @@
-import game, { getRandomValueInRange } from '../index.js';
+import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
 
-const getRandomOperation = (operations) => operations[Math.floor(Math.random() * 3)];
+const getOperationResult = (first, second, operation) => {
+  switch (operation) {
+    case '+':
+      return `${first + second}`;
+    case '-':
+      return `${first - second}`;
+    case '*':
+      return `${first * second}`;
+    default:
+      throw new Error('Unknown operand!');
+  }
+};
 
-const calcGame = () => {
-  const rules = 'What is the result of the expression?';
-  const expressions = [];
+const calcGameStart = () => {
+  const rule = 'What is the result of the expression?';
+  const questions = [];
   const rigthAnswers = [];
   const operations = ['+', '-', '*'];
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const firstOperand = getRandomValueInRange(0, 100);
     const secondOperand = getRandomValueInRange(0, 100);
-    const operation = getRandomOperation(operations);
+    const operation = operations[getRandomValueInRange(0, operations.length - 1)];
 
-    expressions.push(`${firstOperand} ${operation} ${secondOperand}`);
-
-    switch (operation) {
-      case '+':
-        rigthAnswers.push(`${firstOperand + secondOperand}`);
-        break;
-      case '-':
-        rigthAnswers.push(`${firstOperand - secondOperand}`);
-        break;
-      case '*':
-        rigthAnswers.push(`${firstOperand * secondOperand}`);
-        break;
-      default:
-        throw new Error('Unknown operand!');
-    }
+    questions.push(`${firstOperand} ${operation} ${secondOperand}`);
+    rigthAnswers.push(getOperationResult(firstOperand, secondOperand, operation));
   }
 
-  game(expressions, rigthAnswers, rules);
+  game(questions, rigthAnswers, rule);
 };
 
-export default calcGame;
+export default calcGameStart;

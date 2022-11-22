@@ -1,4 +1,4 @@
-import game, { getRandomValueInRange } from '../index.js';
+import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
 
 const getGCD = (num1, num2) => {
   const isMinNumGCD = Math.max(num1, num2) % Math.min(num1, num2) === 0;
@@ -17,20 +17,20 @@ const getGCD = (num1, num2) => {
   return result;
 };
 
-const gcdGame = () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
-  const expressions = [];
+const gcdGameStart = () => {
+  const rule = 'Find the greatest common divisor of given numbers.';
+  const questions = [];
   const rigthAnswers = [];
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const firstOperand = getRandomValueInRange(0, 100);
     const secondOperand = getRandomValueInRange(0, 100);
 
-    expressions.push(`${firstOperand} ${secondOperand}`);
+    questions.push(`${firstOperand} ${secondOperand}`);
     rigthAnswers.push(`${getGCD(firstOperand, secondOperand)}`);
   }
 
-  game(expressions, rigthAnswers, rules);
+  game(questions, rigthAnswers, rule);
 };
 
-export default gcdGame;
+export default gcdGameStart;

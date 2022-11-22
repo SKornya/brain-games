@@ -1,31 +1,34 @@
-import game, { getRandomValueInRange } from '../index.js';
+import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
 
-const getMissedNumberIndex = (length) => Math.floor(Math.random() * length);
+const getProgression = (start, length, step) => {
+  const progression = [start];
 
-const progressionGame = () => {
-  const rules = 'What number is missing in the progression?';
+  for (let i = 1; i < length; i += 1) {
+    progression.push(progression[i - 1] + step);
+  }
+  return progression;
+};
+
+const progressionGameStart = () => {
+  const rule = 'What number is missing in the progression?';
   const progressions = [];
   const rigthAnswers = [];
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < numberOfRounds; i += 1) {
     const progressionLength = getRandomValueInRange(5, 10);
     const progressionStart = getRandomValueInRange(-50, 50);
     const progressionStep = getRandomValueInRange(-5, 5);
 
-    const progression = [progressionStart];
+    const progression = getProgression(progressionStart, progressionLength, progressionStep);
 
-    for (let j = 1; j < progressionLength; j += 1) {
-      progression.push(progression[j - 1] + progressionStep);
-    }
-
-    const missedNumberIndex = getMissedNumberIndex(progressionLength);
+    const missedNumberIndex = getRandomValueInRange(0, progressionLength - 1);
 
     rigthAnswers.push(progression[missedNumberIndex].toString());
     progression[missedNumberIndex] = '..';
     progressions.push(progression.join(' '));
   }
 
-  game(progressions, rigthAnswers, rules);
+  game(progressions, rigthAnswers, rule);
 };
 
-export default progressionGame;
+export default progressionGameStart;
