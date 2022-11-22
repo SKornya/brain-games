@@ -6,9 +6,9 @@ const getGCD = (num1, num2) => {
     return Math.min(num1, num2);
   }
 
-  let result = 0;
+  let result = 1;
 
-  for (let div = 1; div < Math.min(num1, num2) / 2; div += 1) {
+  for (let div = 2; div < Math.min(num1, num2) / 2; div += 1) {
     const divIsCommonDivisor = num1 % div === 0 && num2 % div === 0;
     if (divIsCommonDivisor) {
       result = div;
