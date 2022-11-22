@@ -3,6 +3,11 @@
 
 <a href="https://codeclimate.com/github/SKornya/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9795e25576592b6e5787/maintainability" /></a>
 
+## System requires
+
+- node.js 12 or higher
+- make
+
 ## Install
 
 ```bash
