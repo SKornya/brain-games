@@ -1,4 +1,9 @@
-import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
+import game, {
+  getRandomValueInRange,
+  numberOfRounds,
+  questions as numbers,
+  answers as rigthAnswers,
+} from '../index.js';
 
 const isPrimeNumber = (num) => {
   if (num === 0 || num === 1) {
@@ -15,8 +20,6 @@ const isPrimeNumber = (num) => {
 
 const primeGameStart = () => {
   const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const numbers = [];
-  const rigthAnswers = [];
 
   for (let i = 0; i < numberOfRounds; i += 1) {
     const number = getRandomValueInRange(0, 100);

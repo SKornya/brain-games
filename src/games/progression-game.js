@@ -1,4 +1,9 @@
-import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
+import game, {
+  getRandomValueInRange,
+  numberOfRounds,
+  questions as progressions,
+  answers as rigthAnswers,
+} from '../index.js';
 
 const getProgression = (start, length, step) => {
   const progression = [start];
@@ -11,8 +16,6 @@ const getProgression = (start, length, step) => {
 
 const progressionGameStart = () => {
   const rule = 'What number is missing in the progression?';
-  const progressions = [];
-  const rigthAnswers = [];
 
   for (let i = 0; i < numberOfRounds; i += 1) {
     const progressionLength = getRandomValueInRange(5, 10);

@@ -1,4 +1,9 @@
-import game, { getRandomValueInRange, numberOfRounds } from '../index.js';
+import game, {
+  getRandomValueInRange,
+  numberOfRounds,
+  questions,
+  answers as rigthAnswers,
+} from '../index.js';
 
 const getOperationResult = (first, second, operation) => {
   switch (operation) {
@@ -15,8 +20,6 @@ const getOperationResult = (first, second, operation) => {
 
 const calcGameStart = () => {
   const rule = 'What is the result of the expression?';
-  const questions = [];
-  const rigthAnswers = [];
   const operations = ['+', '-', '*'];
 
   for (let i = 0; i < numberOfRounds; i += 1) {
