@@ -23,8 +23,8 @@ const calcGameStart = () => {
   const operations = ['+', '-', '*'];
 
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const firstOperand = getRandomValueInRange(0, 100);
-    const secondOperand = getRandomValueInRange(0, 100);
+    const firstOperand = getRandomValueInRange();
+    const secondOperand = getRandomValueInRange();
     const operation = operations[getRandomValueInRange(0, operations.length - 1)];
 
     questions.push(`${firstOperand} ${operation} ${secondOperand}`);

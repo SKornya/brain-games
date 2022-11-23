@@ -4,7 +4,9 @@ export const numberOfRounds = 3;
 export const questions = [];
 export const answers = [];
 
-export const getRandomValueInRange = (min, max) => Math.round(Math.random() * (max - min) + min);
+export const getRandomValueInRange = (min = 0, max = 100) => Math.round(
+  Math.random() * (max - min) + min,
+);
 
 const game = (gameQuestions, rigthAnswers, rules) => {
   console.log('Welcome to the Brain Games!');

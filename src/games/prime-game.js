@@ -22,7 +22,7 @@ const primeGameStart = () => {
   const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const number = getRandomValueInRange(0, 100);
+    const number = getRandomValueInRange();
 
     numbers.push(number);
     rigthAnswers.push(isPrimeNumber(number) ? 'yes' : 'no');

@@ -11,7 +11,7 @@ const evenGameStart = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no"';
 
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const number = getRandomValueInRange(0, 100);
+    const number = getRandomValueInRange();
 
     numbers.push(number);
     rigthAnswers.push(isEven(number) ? 'yes' : 'no');

@@ -30,8 +30,8 @@ const gcdGameStart = () => {
   const rule = 'Find the greatest common divisor of given numbers.';
 
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const firstOperand = getRandomValueInRange(0, 100);
-    const secondOperand = getRandomValueInRange(0, 100);
+    const firstOperand = getRandomValueInRange();
+    const secondOperand = getRandomValueInRange();
 
     questions.push(`${firstOperand} ${secondOperand}`);
     rigthAnswers.push(`${getGCD(firstOperand, secondOperand)}`);
