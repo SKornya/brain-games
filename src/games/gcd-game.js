@@ -8,7 +8,7 @@ import game, {
 const getGCD = (num1, num2) => {
   const minFromNums = Math.min(num1, num2);
   const maxFromNums = Math.max(num1, num2);
-  
+
   const isMinNumGCD = maxFromNums % minFromNums === 0;
   if (isMinNumGCD) {
     return Math.min(num1, num2);
