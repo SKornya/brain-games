@@ -6,7 +6,10 @@ import game, {
 } from '../index.js';
 
 const getGCD = (num1, num2) => {
-  const isMinNumGCD = Math.max(num1, num2) % Math.min(num1, num2) === 0;
+  const minFromNums = Math.min(num1, num2);
+  const maxFromNums = Math.max(num1, num2);
+  
+  const isMinNumGCD = maxFromNums % minFromNums === 0;
   if (isMinNumGCD) {
     return Math.min(num1, num2);
   }
